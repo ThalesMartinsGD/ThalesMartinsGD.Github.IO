@@ -1,0 +1,472 @@
+:root {
+    --dark-color: #343E3D;
+    --light-color: #F4FFFD;
+    --orange: #F77F00;
+    --dark-orange: #C96711;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+@font-face {
+    font-family: 'League Spartan Variable';
+    src: url('LeagueSpartan-VF.woff2') format('woff2-variations');
+    font-weight: 200 900;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+::-moz-selection {
+    background: var(--orange);
+    color: #343E3D;
+}
+
+::selection {
+    background: var(--orange);
+    color: #343E3D;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 2em;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.carousel-inner img {
+    image-rendering: optimizeQuality;
+    max-width: 40vw !important;
+    width: 40vw !important;
+    height: auto !important;
+    margin: auto 5% auto 0;
+}
+
+.carousel-inner iframe {
+    image-rendering: optimizeQuality;
+    max-width: 40vw !important;
+    width: 40vw !important;
+    height: 22.5vw !important;
+    margin: auto 5% auto 0;
+}
+
+li {
+    text-align: justify;
+}
+
+ul {
+    padding-left: 1em;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section {
+    /* padding: 120px 100px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.hr3 {
+    width: 100%;
+    margin: 5% 0;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #C96711, transparent);
+}
+
+.email {
+    font: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.titleIcon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    color: var(--orange);
+    margin-right: 0.5rem;
+}
+
+.title {
+    color: var(--orange);
+    margin-bottom: 1em;
+}
+
+.highlight {
+    color: var(--orange);
+}
+
+.inline {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.column {
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.project-name {
+    text-align: center;
+    font-size: 3em;
+}
+
+.pill {
+    font-size: 2rem;
+    background-color: var(--orange);
+    border: none;
+    color: var(--dark-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.pill:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+#introImg {
+    position: relative;
+    right: 0;
+    float: right;
+    align-self: center;
+    image-rendering: crisp-edges;
+    clip-path: circle(120px at center);
+}
+
+#name {
+    font-family: League Spartan Variable;
+    font-variation-settings: "wght" 800;
+    font-size: 3rem;
+    line-height: 50px;
+    color: var(--orange);
+}
+
+#intro {
+    max-width: 70vw;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+#introWrapper>h2 {
+    font-family: League Spartan Variable;
+    font-variation-settings: "wght" 500;
+    line-height: 5rem;
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+#about-me {
+    height: auto;
+    min-height: 100% !important;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+#projects {
+    align-items: center;
+    margin-top: 2%;
+    height: 100%;
+}
+
+.container {
+    width: 60%;
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    padding: 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer {
+    margin: 20vh 0 0 0;
+    height: 20vh;
+    max-width: 100%;
+    background-color: var(--orange);
+    color: var(--dark-color);
+}
+
+#footer p {
+    text-align: center;
+    margin: 0 auto 1% auto;
+    font-size: 0.5rem;
+}
+
+.links {
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    width: 20%;
+    margin: auto;
+}
+
+
+/** TABS */
+
+.project {
+    height: 90vh;
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .project>a {
+        display: inline-block;
+        margin-bottom: 1rem;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.project h1 {
+    color: var(--orange);
+    margin-top: 0;
+}
+
+.info {
+    height: 80vh;
+}
+
+.carousel {
+    margin: auto;
+}
+
+@media screen and (min-width:768px) {
+    .container>a {
+        position: absolute;
+        bottom: 0;
+        margin: 0 35%;
+        width: 30%;
+        font-size: 1.5em;
+    }
+}
+
+div[class="tabgroup"] {
+    height: 100%;
+    width: 60% !important;
+    margin: 0 !important;
+}
+
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    border: 1px solid var(--orange);
+    background-color: #636363;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: var(--orange);
+    color: var(--dark-color);
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    height: 100%;
+    display: none;
+    padding: 1em 1.5em;
+    border-top: none;
+    overflow-y: auto;
+    scrollbar-color: var(--orange);
+}
+
+.tabcontent>p {
+    font-size: 14px;
+}
+
+.tabcontent li {
+    font-size: 14px;
+}
+
+.tabcontent>h4 {
+    font-weight: 800;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width:768px) {
+    body,
+    html {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .section {
+        max-width: 80vw;
+    }
+    #introImg {
+        display: none;
+    }
+    .awards {
+        width: 100%;
+        display: grid;
+    }
+    .video {
+        width: 100%;
+    }
+    .inline {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+    .game {
+        width: 100%;
+    }
+    #footer p {
+        font-size: 1rem;
+    }
+    .links {
+        width: 80%;
+    }
+    .project {
+        min-height: 110vh;
+    }
+    div[class="tabgroup"] {
+        height: 110vh;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .tab button {
+        font-size: 1.1em;
+    }
+    .tabcontent {
+        max-height: 90%;
+        height: 100%;
+    }
+    .tabcontent>p {
+        font-size: 1em;
+    }
+    .tabcontent>li {
+        font-size: 1em;
+    }
+    .tabcontent>h4 {
+        font-size: 1.5em;
+    }
+    .info {
+        max-height: 90%;
+    }
+    .container {
+        width: 100%;
+        display: inline;
+    }
+    .container>a {
+        margin-bottom: 1em;
+    }
+    .carousel-caption {
+        visibility: hidden;
+    }
+    .carousel {
+        width: 70vw;
+        height: 39vw;
+        margin-bottom: 2em;
+    }
+    .carousel-inner img {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .carousel-inner iframe {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .project-name {
+        font-size: 3em;
+    }
+}
