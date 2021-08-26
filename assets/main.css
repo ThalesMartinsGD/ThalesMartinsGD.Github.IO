@@ -1,9 +1,10 @@
 :root {
-    --dark-color: #343E3D;
+    --dark-color: #2C2F33; /*og grey: 343E3D*/
     --light-color: #F4FFFD;
     --orange: #F77F00;
     --dark-orange: #C96711;
 }
+
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
@@ -24,12 +25,12 @@
 
 ::-moz-selection {
     background: var(--orange);
-    color: #343E3D;
+    color: #2C2F33;
 }
 
 ::selection {
     background: var(--orange);
-    color: #343E3D;
+    color: #2C2F33;
 }
 
 body,
