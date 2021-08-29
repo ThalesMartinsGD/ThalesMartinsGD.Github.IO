@@ -217,12 +217,15 @@ a:active {
     justify-content: center;
 }
 
-#introWrapper>h2 {
+#introWrapper {
+    margin-top: 1em;
+}
+
+#introWrapper h2 {
     font-family: League Spartan Variable;
     font-variation-settings: "wght" 500;
-    line-height: 5rem;
     font-size: 2.6rem;
-    font-weight: 300;
+    text-align: justify;
 }
 
 #about-me {
@@ -398,13 +401,25 @@ div[class="tabgroup"] {
         font-size: 10px;
     }
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .section {
         max-width: 80vw;
     }
     #introImg {
         display: none;
+    }
+    #introWrapper {
+        margin-top: 0em;
+    }
+    #introWrapper h2 {
+        font-variation-settings: "wght" 500;
+        font-size: 2rem;
+        text-align: justify;
+        line-height: auto;
+    }
+    #name {
+        font-size: 2rem;
     }
     .awards {
         width: 100%;
@@ -429,6 +444,7 @@ div[class="tabgroup"] {
     }
     .project {
         min-height: 110vh;
+        height: auto;
     }
     div[class="tabgroup"] {
         height: 110vh;
@@ -452,7 +468,8 @@ div[class="tabgroup"] {
         font-size: 1.5em;
     }
     .info {
-        max-height: 90%;
+        min-height: 90%;
+        height: 100%;
     }
     .container {
         width: 100%;
@@ -480,5 +497,16 @@ div[class="tabgroup"] {
     }
     .project-name {
         font-size: 3em;
+    }
+}
+
+@media screen and (max-height:768px) {
+    #introWrapper h2 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    #name {
+        font-size: 2rem;
+        line-height: 2.2rem;
     }
 }
